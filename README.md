@@ -2,4 +2,4 @@
 
 This is an online hosting repo for my projects
 
-https://enigmaticagh.github.io/
+http://enigmaticagh.github.io/
