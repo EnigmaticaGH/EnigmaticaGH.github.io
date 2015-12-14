@@ -1,5 +1,5 @@
 # EnigmaticaGH.github.io
 
-This is an online hosting repo for my game projects
+This is an online hosting repo for my projects
 
-https://enigmaticagh.github.io/Hookshot/Hookshot.html
+https://enigmaticagh.github.io/
