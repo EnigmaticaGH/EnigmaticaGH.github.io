@@ -1,63 +1,23 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Enigmaticagh.GitHub.io by EnigmaticaGH</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Enigmaticagh.GitHub.io</h1>
-        <p>Derek Shunia - Developer and Musician</p>
-
-
-        <p class="view"><a href="https://github.com/EnigmaticaGH">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h1>
-<a id="my-github-projects" class="anchor" href="#my-github-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>My GitHub Projects</h1>
-
-<h3>
-<a id="moebius-project" class="anchor" href="#moebius-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moebius Project</h3>
-
-<p><a href="http://enigmaticagh.github.io/Hookshot/Hookshot.html">Click here to play the Moebius Project</a><br>
-This is a simple infinite runner where you assume the role of a frog and have to get as far as you can. Use your tongue to stick to objects and swing through the jungle! This game is still in early development.  </p>
-
-<h3>
-<a id="igs-2-project" class="anchor" href="#igs-2-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>IGS 2 Project</h3>
-
-<p><a href="http://enigmaticagh.github.io/IGS2/IGS2.html">Click here to play the IGS 2 Project</a><br>
-This is currently just a prototype.  </p>
-
-<h1>
-<a id="music-and-other-media" class="anchor" href="#music-and-other-media" aria-hidden="true"><span class="octicon octicon-link"></span></a>Music and Other Media</h1>
-
-<h3>
-<a id="music" class="anchor" href="#music" aria-hidden="true"><span class="octicon octicon-link"></span></a>Music</h3>
-
-<p><a href="https://derekshunia.bandcamp.com/">My BandCamp</a><br>
-<a href="https://www.youtube.com/channel/UCVFcKv3uV9feY3r1im1-7BQ">My YouTube Channel</a>  </p>
-
-<h3>
-<a id="mods-for-other-games" class="anchor" href="#mods-for-other-games" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mods for Other Games</h3>
-
-<p><a href="http://www.beamng.com/resources/high-power-car-pack-w-scenarios.56/">BeamNG.Drive: High Power Car Pack</a><br>
-<a href="http://www.beamng.com/resources/spaceballs-the-sunburst-liveries.145/">BeamNG.Drive: Hirochi Sunburst Skin Pack</a>  </p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+<head>
+<link rel="stylesheet" href="css/w3.css">
+<script src="scripts/jquery-2.2.3.min.js"></script>
+<script src="scripts/moment.js"></script>
+<script src="scripts/datePicker.js"></script>
+<script>
+moment().format();
+function Start(){
+	var d = DatePicker(document.getElementById('calendar'));
+	d.addEventListener("dateselect", function(e){
+		alert("You selected " + moment(e.selectedDay).format('dddd, MMMM Do, YYYY'));
+	});
+}
+</script>
+</head>
+<body>
+<div class="w3-container w3-center w3-padding-64">
+	<button class="w3-btn" onclick=Start()>Click here to show calendar</button>
+	<div class="w3-center w3-padding-4" id='calendar'></div>
+</div>
+</body>
 </html>
